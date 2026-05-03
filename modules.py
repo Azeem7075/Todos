@@ -4,7 +4,7 @@ from sqlalchemy import Column, String, Boolean, Integer
 
 class Todos(Base):
     __tablename__= "todos"
-    id = Column(Integer, primary_key=True, index=True)
+    id = Column( Integer ,primary_key=True, index=True)
     text = Column (String)
     done = Column(Boolean,default=False)
 
@@ -15,3 +15,5 @@ def dependency():
         yield db
     finally:
         db.close()
+
+
