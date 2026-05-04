@@ -1,6 +1,10 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import  sessionmaker, declarative_base
 
+
+
+
+
 link = "sqlite:///./todos.db"
 
 engine = create_engine(
@@ -15,4 +19,6 @@ SessionLocal = sessionmaker(
 )
 
 Base = declarative_base()
+
+
 
