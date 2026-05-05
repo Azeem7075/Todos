@@ -27,24 +27,4 @@ def create_user(data:UserSchema, db:Session = Depends(dependency)):
 
 
 
-    """
-    class User(Base):
-    __tablename__ = "users"
-    id = Column(Integer,primary_key = True, index=True)
-    user_name = Column(String)
-    email = Column(String)
-    password = Column(String)
-    first_name = Column(String)
-    second_name = Column(String)
-    role = Column(String)"""
-
-
-    """
-    class UserSchema(BaseModel):
-    user_name : str = Field(min_length=3,max_length=20)
-    email: EmailStr
-    password: str = Field(min_length=1)
-    first_name : str = Field(max_length=10)
-    second_name: str = Field (max_length=10)
-    role  : str = Field( default="user")
-"""
+  
